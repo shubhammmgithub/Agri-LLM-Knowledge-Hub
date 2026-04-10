@@ -1,8 +1,22 @@
-streamlit
-langchain
-langchain-community
-langchain-openai
-python-dotenv
-googletrans==4.0.0-rc1
-requests
-beautifulsoup4
+# --- Core Frameworks ---
+fastapi          # For building the production-grade backend API
+uvicorn          # The high-performance server to run FastAPI
+streamlit        # For the interactive frontend UI
+
+# --- AI & Model Handling ---
+unsloth          # To run your fine-tuned Llama 3.1 8B efficiently
+torch            # Required for Unsloth and model inference
+transformers     # For the Vision (BLIP/Llama) and NLP pipelines
+pillow           # Critical for processing uploaded images
+
+# --- Flagship Features (Voice/Multimodal/Data) ---
+python-multipart # Mandatory to receive uploaded files (Images/Voice) in FastAPI
+gTTS             # For converting model text responses into audio
+httpx            # Modern, async HTTP client for fetching live Weather/Mandi data
+
+# --- Utilities ---
+python-dotenv    # To safely manage your Hugging Face and API keys
+requests         # For the Streamlit frontend to talk to the FastAPI backend
+
+#pip install PyPDF2 tqdm groq python-dotenv
+#
