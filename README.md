@@ -65,9 +65,12 @@ Alternatively, run them separately:
 - **Backend**: `uvicorn backend.main:app --reload`
 - **Frontend**: `streamlit run frontend/app.py`
 
-## 🧠 Model Information
+## 🧠 Model & Dataset Information
 
-The core model is **Llama 3.1 8B**, fine-tuned for agricultural extension and crop management. It includes custom behavioral logic (EOS_TOKEN fixes) to ensure precise and helpful responses.
+- **Fine-Tuned Model**: The core model is **Llama 3.1 8B**, fine-tuned for agricultural extension and crop management. It includes custom behavioral logic (EOS_TOKEN fixes) to ensure precise and helpful responses.
+  - 🚀 **Hugging Face Model**: [Agri-LLM-Llama-3.1-8B](https://huggingface.co/shubhammmx/Agri-LLM-Llama-3.1-8B)
+- **Custom Dataset**: The model was trained on a specialized agricultural dataset created from scratch, covering various aspects of farming, pest management, and crop diagnosis.
+  - 📊 **Hugging Face Dataset**: [Agri-LLM-Dataset](https://huggingface.co/datasets/shubhammmx/Agri-LLM-Dataset)
 
 ## 📄 License
 
